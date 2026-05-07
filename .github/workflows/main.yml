@@ -70,6 +70,6 @@ jobs:                                        # 작업을 선언할게
         run: |
           git config user.email ${{ env.GIT_EMAIL }}
           git config user.name ${{ env.GIT_NAME }}
-          git add ./Deployment.yaml
+          git add ./Deployment-svelte.yaml
           git commit -m "Update image tag by GitHub Action - V2"
           git push origin main
